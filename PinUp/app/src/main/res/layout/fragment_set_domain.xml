@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_set_domain"
+    android:background="@color/back_front_color"
+    tools:context="com.pinup.pinup.view.fragment.SetDomain">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_domain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_align_30dp"
+        android:layout_marginRight="@dimen/dimen_align_30dp"
+        android:layout_marginTop="@dimen/dimen_align_60dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView_main"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/pinup" />
+
+        <TextView
+            android:id="@+id/textView_pinup_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/imageView_main"
+            android:layout_marginTop="@dimen/dimen_align_10dp"
+            android:text="PinUp"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/dimen_size_30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textview_domain_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_domain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_align_20dp"
+        android:text="Set you Subdomain"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_size_20sp"
+
+        />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_tech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_align_30dp"
+            android:layout_marginRight="@dimen/dimen_align_30dp"
+            android:layout_below="@+id/textview_domain_admin"
+            android:layout_marginTop="@dimen/dimen_align_40dp"
+            >
+
+            <EditText
+                android:id="@+id/edittext_domain_tech"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="TECH"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/textview_domain_disc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a subdomain of Admin ,e.g.\n tech.pinup.com or sales.pinup.com"
+            android:textAlignment="center"
+            android:layout_below="@+id/input_layout_tech"
+            android:layout_marginTop="@dimen/dimen_align_20dp"
+            android:textColor="@android:color/black"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/button_domain_submit"
+            android:background="@color/back_saperator_fent"
+            />
+        <Button
+            android:id="@+id/button_domain_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+           android:text="Submit"
+            android:textColor="@android:color/white"
+            android:background="@color/back_front_color"
+            />
+    </RelativeLayout>
+</FrameLayout>
