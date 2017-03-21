@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.Registration">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_front_color"
+        >
+        <LinearLayout
+            android:id="@+id/layout_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dimen_align_30dp"
+            android:layout_marginRight="@dimen/dimen_align_30dp"
+            android:layout_marginTop="@dimen/dimen_align_60dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView_main"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/pinup" />
+
+            <TextView
+                android:id="@+id/textView_pinup_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imageView_main"
+                android:layout_marginTop="@dimen/dimen_align_10dp"
+                android:text="PinUp"
+                android:textColor="@color/text_color_white"
+                android:textSize="@dimen/dimen_size_30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textview_register_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_registration"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_align_20dp"
+            android:text="Admin Registration"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_white"
+            android:textSize="@dimen/dimen_size_20sp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_register_admin"
+            android:layout_marginLeft="@dimen/dimen_align_30dp"
+            android:layout_marginRight="@dimen/dimen_align_30dp"
+            android:orientation="vertical"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/edittext_registration_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_align_10dp"
+                    android:textColor="@color/text_color_white"
+                    android:hint="Name"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/edittext_registration_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_align_10dp"
+                    android:textColor="@color/text_color_white"
+                    android:hint="Email"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/edittext_registration_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_align_10dp"
+                    android:textColor="@color/text_color_white"
+                    android:hint="Password"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:id="@+id/edittext_registration_re_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/dimen_align_10dp"
+                    android:textColor="@color/text_color_white"
+                    android:hint="Re-enter Password"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/button_registration_register"
+            android:background="@color/back_saperator_fent"
+            />
+
+        <Button
+            android:id="@+id/button_registration_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/back_front_color"
+            android:text="Register"
+            android:textColor="@color/text_color_white"
+            />
+    </RelativeLayout>
+</FrameLayout>
